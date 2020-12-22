@@ -7,7 +7,7 @@ Codes and notes of data preprocessing for ML model development
 
 ## 1. Data Cleaning 
 
-* Missing data
+###### Missing data
 -Removing: Rule of thumb: If more than 50% of values are missing for any of the database rows or columns, you have to delete the whole row/column unless it is possible to fill in the missing values.
 -Imputation (replacement of missing observations by using statistical algorithms).
 -Binning (count-based, handling of missing values as its own group, …)
