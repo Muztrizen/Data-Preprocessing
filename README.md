@@ -7,19 +7,16 @@ Codes and notes of data preprocessing for ML model development
 
 ## 1. Data Cleaning 
 ###### Missing data
-- * Remove missing data * If more than 50% of values are missing for any of the database rows or columns, you have to delete the whole row/column unless it is possible to fill in the missing values.
-- Imputation (replacement of missing observations by using statistical algorithms).
-- Binning (count-based, handling of missing values as its own group, …)
-
-For categorical features, you can do things like:
-* 		Mode filling: Fill missing values with the most popular/frequent/modal class.
-* 		Temporal filling (forward or backward fill): Fill missing values with the preceding value (top-down) or with the succeeding value (bottom-up).
-* 		Encoding and fill: In this method, you can encode the values using different strategies, and then fill with either the mean, mode, or the median.
-
+- *Binning* (count-based, handling of missing values as its own group).
+- *Remove missing data* if more than 50% of values are missing for any of the database rows or columns. Remove the whole row/column unless it is possible to fill in the missing values.
+- *Imputation* (replacement of missing observations by using statistical algorithms). For categorical features,
+-- Mode filling: Fill missing values with the most popular/frequent/modal class.
+-- Temporal filling (forward or backward fill): Fill missing values with the preceding value (top-down) or with the succeeding value (bottom-up).
+-- Encoding and fill: In this method, you can encode the values using different strategies, and then fill with either the mean, mode, or the median.
 For numerical features, we can also do things like:
-* 		Filling with mean, mode, or median.
-* 		Temporal filling (backward or forward filling).
-* 		Use machine learning models: Train a machine learning model to learn the most appropriate fill values.
+-- Filling with mean, mode, or median.
+-- Temporal filling (backward or forward filling).
+-- Use machine learning models: Train a machine learning model to learn the most appropriate fill values.
 
 * Incomplete records 
 particular character, such as a question mark.
