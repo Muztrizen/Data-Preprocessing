@@ -8,6 +8,9 @@ Codes and notes of data preprocessing for ML model development
 ## 1. Data Cleaning 
 
 ### Missing data
+* **Problem**:
+* **Solution**:
+
 - *Binning* (count-based, handling of missing values as its own group).
 - *Remove missing data* if more than 50% of values are missing for any of the database rows or columns. Remove the whole row/column unless it is possible to fill in the missing values.
 - *Imputation* (replacement of missing observations by using statistical algorithms). 
@@ -25,6 +28,8 @@ Codes and notes of data preprocessing for ML model development
 * **Solution** : 
 
 ### Noisy data
+* **Problem**:
+* **Solution**:
 -Duplicated data. removal of duplicates.
 
 ### Outliers or anomalies
