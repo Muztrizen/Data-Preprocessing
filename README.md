@@ -82,7 +82,7 @@ Anonymize or remove the data completely.
 ###### Data Partitioning 
 * (create training + validation + test data set, ...)
 
-###### Reference:
+## Reference:
 1. https://cloud.google.com/solutions/machine-learning/data-preprocessing-for-ml-with-tf-transform-pt1
 2. https://medium.com/better-programming/data-preprocessing-for-machine-learning-3822ace03ae6
 3. https://www.infoq.com/articles/ml-data-processing/
