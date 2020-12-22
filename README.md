@@ -21,8 +21,8 @@ Codes and notes of data preprocessing for ML model development
   * Use machine learning models: Train a machine learning model to learn the most appropriate fill values.
 
 ### Incomplete records 
-* #### Problem: Particular character, such as a question mark.
-* #### Solution:
+* **Problem**: Dataset contains particular character such as a question mark.
+* **Solution** : 
 
 ### Noisy data
 -Duplicated data. removal of duplicates.
