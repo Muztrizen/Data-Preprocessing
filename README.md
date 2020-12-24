@@ -1,18 +1,21 @@
 # Data-Preprocessing
-Codes and notes of data preprocessing for ML model development
+Codes and notes of data preprocessing for ML model development.
 
 ## Definition
 - Preparation of data directly after accessing it from a data source. 
-- This step is done before the interactive analysis of data begins. 
+- Carried out before EDA. 
 
 ## 1. Data Cleaning 
 
 ### Missing data
-* **Problem**:
-* **Solution**:
+* **Problem**: 
+- Raw data is Null or NaN.
 
+* **Solution**:
 - *Binning* (count-based, handling of missing values as its own group).
+
 - *Remove missing data* if more than 50% of values are missing for any of the database rows or columns. Remove the whole row/column unless it is possible to fill in the missing values.
+
 - *Imputation* (replacement of missing observations by using statistical algorithms). 
 * Imputation for categorical  features:
   * Mode filling: Fill missing values with the most popular/frequent/modal class.
@@ -24,34 +27,56 @@ Codes and notes of data preprocessing for ML model development
   * Use machine learning models: Train a machine learning model to learn the most appropriate fill values.
 
 ### Incomplete records 
-* **Problem**: Dataset contains particular character such as a question mark.
-* **Solution** : 
+* **Problem**: 
+- Dataset contains particular character such as 'a question mark' or irrelated symbol.
+
+* **Solution**:
+- Replace the data with relevant value, for example, a synthetic value created based on mostly appeared data in the datasets.
 
 ### Noisy data
 * **Problem**:
+- Duplicated data. 
+
 * **Solution**:
--Duplicated data. removal of duplicates.
+- Remove the duplicates.
 
 ### Outliers or anomalies
-Unexpected values often surface in a distribution of values, especially when working with data from unknown sources which lack poor data validation controls.
+* **Problem**:
+- Unexpected values often surface in a distribution of values, especially when working with data from unknown sources which lack poor data validation controls.
+
+* **Solution**:
 
 ### Mixture of data values
-Mixed data value such as girl and women which hold the same meaning 
-Check unique value for categorical class.
-Use: df[“column name”].value_counts()
+* **Problem**:
+- Mixed data value such as girl and women which hold the same meaning.
+
+* **Solution**:
+- Check unique value for categorical class. For example use: df[“column name”].value_counts()
 
 ### Improperly formatted/structured data
-Data sometimes needs to be extracted into a different format or location. 
+* **Problem**:
+- Data sometimes needs to be extracted into a different format or location. 
 A good way to address this is to consult domain experts or join data from other sources.
 
 ### Inconsistent values and non-standardized categorical variables
-Often when combining data from multiple sources, we can end up with variations in variables like company names or states. For instance, a state in one system could be “Texas,” while in another it could be “TX.”  Finding all variations and correctly standardizing will greatly improve the model accuracy.
+* **Problem**:
+- Often when combining data from multiple sources, we can end up with variations in variables like company names or states. For instance, a state in one system could be “Texas,” while in another it could be “TX.”  
+
+* **Solution**:
+- Finding all variations and correctly standardizing will greatly improve the model accuracy.
 
 ### Limited or sparse features/attributes
-Feature enrichment, or building out the features in our data often requires us to combine datasets from diverse sources. Joining files from different systems is often hampered when there are no easy or exact columns to match the datasets. This then requires the ability to perform fuzzy matching, which could also be based on combining multiple columns to achieve the match. For instance, combining two datasets on CUSTOMER ID (present in both data datasets) could be easy. Combining a dataset that has separate columns for CUSTOMER FIRST NAME and CUSTOMER LAST NAME with another dataset with a column CUSTOMER FULL NAME, containing “Last name, First name” becomes more tricky.
+* **Problem**:
+
+* **Solution**:
+- Feature enrichment, or building out the features in our data often requires us to combine datasets from diverse sources. Joining files from different systems is often hampered when there are no easy or exact columns to match the datasets. This then requires the ability to perform fuzzy matching, which could also be based on combining multiple columns to achieve the match. For instance, combining two datasets on CUSTOMER ID (present in both data datasets) could be easy. Combining a dataset that has separate columns for CUSTOMER FIRST NAME and CUSTOMER LAST NAME with another dataset with a column CUSTOMER FULL NAME, containing “Last name, First name” becomes more tricky.
 
 ### Sensitive data
-Anonymize or remove the data completely.
+* **Problem**:
+
+* **Solution**:
+- Anonymize or remove the data completely.
+
 
 ## 2.Data Transformation
 
