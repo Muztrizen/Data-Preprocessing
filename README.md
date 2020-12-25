@@ -96,22 +96,6 @@ A good way to address this is to consult domain experts or join data from other 
 ## 3.Data Reduction
 * Reducing the number of features by creating lower-dimension, more powerful data representations using techniques such as PCA, embedding extraction, and hashing.Dimensionality reduction
 
-## 4.Data Selection
-
-###### Data Replacement
-* (cutting, splitting, merging, ...)
-
-###### Weighting and Selection (attribute weighting, automatic optimization, ...)
-
-###### Feature selection
-* Selecting a subset of the input features for training the model, and ignoring the irrelevant or redundant ones, using filter or wrapper methods. This can also involve simply dropping features if the features are missing a large number of values.
-
-###### Data selection. 
-* Selecting data points from the input dataset to create training, evaluation (validation), and test sets. This process includes techniques for repeatable random sampling, minority classes oversampling, and stratified partitioning.
-
-###### Data Partitioning 
-* (create training + validation + test data set, ...)
-
 ## Reference:
 1. https://cloud.google.com/solutions/machine-learning/data-preprocessing-for-ml-with-tf-transform-pt1
 2. https://medium.com/better-programming/data-preprocessing-for-machine-learning-3822ace03ae6
